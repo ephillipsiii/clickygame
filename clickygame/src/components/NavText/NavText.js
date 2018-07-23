@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './NavText.css';
 
 class NavText extends Component {
@@ -6,7 +6,7 @@ class NavText extends Component {
         text: '',
         animate: false
     };
-    componentWillReceiveProps({ score, topScore }) {
+    componentWillReceiveProps({ score, highScore }) {
         const newState = { animate: true };
         if (score === 0 && highScore === 0) {
             newState.text = 'incorrect';

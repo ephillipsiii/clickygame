@@ -1,5 +1,5 @@
 import React from 'react';
-import NavMessage from "../NavMessage";
+import NavMessage from "../NavText";
 import "./Nav.css";
 
 const Nav = props => (
